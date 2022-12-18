@@ -4,8 +4,7 @@ import shortid from 'shortid';
 import style from './FeedbackOptions.module.css';
 
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
-    // console.log(options);
-    // console.log(onLeaveFeedback)
+
     return (
         <>
             <div className={style.feedback__buttonWrap}>
@@ -24,12 +23,4 @@ FeedbackOptions.propTypes = {
     onLeaveFeedback: PropTypes.func.isRequired
 }
 
-// export default function Buttons({ goodIncrement, neutralIncrement, badIncrement }) {
-//     return (
-//         <div className={style.feedback__buttonWrap}>
-//                     <button className={style.feedback__button} type="button" onClick={goodIncrement}>good</button>
-//                     <button className={style.feedback__button} type="button" onClick={neutralIncrement}>neutral</button>
-//                     <button className={style.feedback__button} type="button" onClick={badIncrement}>bad</button>
-//         </div>
-//     )
-// }
+
