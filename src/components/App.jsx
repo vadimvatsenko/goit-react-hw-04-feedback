@@ -19,13 +19,13 @@ const App = () => {
     const {name} = e.target
     // const { name } = e.target.innerText.toLowerCase()
     if (name === 'good') {
-      setGood(good +1)
+      setGood(prevState => prevState +1)
     }
     if (name === 'bad') {
-      setBad(bad +1)
+      setBad(prevState => prevState +1)
     }
     if (name === 'neutral') {
-      setNeutral(neutral +1)
+      setNeutral(prevState => prevState +1)
     }
 
   }
